@@ -1518,8 +1518,8 @@ ul {
     }
 
     .menu_logo {
-        width: 175px;
-        height: 175px;
+        width: 200px;
+        height: 200px;
         overflow: hidden;
     }
 
@@ -1553,7 +1553,7 @@ ul {
         width: 100%;
         height: 100%;
         padding: 5px 10px;
-        margin-top: 15px;
+        margin-top: 25px;
     }
 
     .hero-section .hero-content .titles .title {
@@ -1801,13 +1801,13 @@ ul {
         flex-direction: column;
         justify-content: flex-start;
         border-radius: 6px;
-        padding: 10px;
+        padding: 20px;
         overflow: hidden;
     }
 
     .planes-section .planes-content .planes-title {
         width: 100%;
-        height: 10%;
+        height: 15%;
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -1823,7 +1823,7 @@ ul {
     }
 
     .planes-section .planes-content .planes-title .descrip {
-        width: 80%;
+        width: 90%;
         margin-top: 5px;
         color: rgba(255, 255, 255, 0.65);
         font-size: 12px;
@@ -1833,7 +1833,7 @@ ul {
         width: 100%;
         height: 60%;
         padding: 5px;
-        margin-top: 40px;
+        margin-top: 80px;
         display: flex;
         gap: 20px;
         flex-direction: column;
@@ -1952,7 +1952,7 @@ ul {
     }
 
     .performance-servicios-section .tarjeta-content .text-content .title {
-        width: 25%;
+        width: 20%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -1974,7 +1974,7 @@ ul {
     }
 
     .performance-servicios-section .tarjeta-content .text-content .sub-text-content {
-        width: 50%;
+        width: 60%;
         height: 100%;
         display: flex;
         gap: 0px;
@@ -1985,12 +1985,12 @@ ul {
     }
 
     .performance-servicios-section .tarjeta-content .text-content .sub-text-content .descrip {
-        font-size: 12px;
+        font-size: 10px;
         text-align: justify;
     }
 
     .performance-servicios-section .tarjeta-content .text-content .sub-text-content .nota-importante {
-        font-size: 10px;
+        font-size: 8px;
         align-self: flex-start;
         color: #45a29e;
         font-weight: 500;
@@ -2187,5 +2187,6 @@ ul {
     .copyright {
         font-size: 10px;
     }
+
 
 }
