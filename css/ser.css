@@ -860,6 +860,11 @@ body {
     font-size: 14px;
 }
 
+.footer-section {
+    width: 100%;
+    height: 250px;
+}
+
 .footer-section .footer-content {
     width: 100%;
     height: 100%;
@@ -881,7 +886,6 @@ body {
 
 .footer-section .footer-content .footer .footer-logo {
     position: relative;
-    margin-top: 10px;
     width: 33%;
     height: 150px;
     display: flex;
