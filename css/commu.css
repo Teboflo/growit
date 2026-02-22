@@ -1153,6 +1153,7 @@ ul {
     .price-section {
         width: 100%;
         height: 1350px;
+        gap: 0;
     }
 
     .price-section .price-content .headline {
@@ -1176,7 +1177,7 @@ ul {
     }
 
     .price-section .price-content .planes {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .price-section .price-content .planes .plan .title {
