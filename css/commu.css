@@ -1333,7 +1333,7 @@ ul {
     }
 
     .aim-section {
-        height: 800px;
+        height: 550px;
     }
 
     .aim-section .aim-content {
@@ -1360,57 +1360,6 @@ ul {
     }
 
     .aim-section .aim-content .estrategia {
-        margin-top: 0;
-        width: 100%;
-        height: 250px;
-        display: flex;
-        gap: 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .aim-section .aim-content .estrategia .step {
-        position: relative;
-        padding: 10px 20px;
-        width: 90%;
-        height: 80px;
-        border-radius: 12px 0 12px 12px;
-        z-index: 10;
-        transition: all 0.5s;
-        cursor: pointer;
-        user-select: none;
-    }
-
-    .aim-section .aim-content .estrategia .step::before {
-        width: 80px;
-    }
-
-    .step:nth-child(1),
-    .step:nth-child(3) {
-        box-shadow: none;
-    }
-
-    .step:nth-child(2),
-    .step:nth-child(4) {
-        box-shadow: none;
-    }
-
-    .aim-section .aim-content .estrategia .step .title {
-        text-align: center;
-        font-size: 16px;
-        font-weight: 600;
-        margin-top: 5px;
-    }
-
-    .aim-section .aim-content .estrategia .step .des {
-        text-align: justify;
-        margin-top: 5px;
-        width: 100%;
-        font-size: 12px;
-    }
-
-    .aim-section .aim-content .estrategia hr {
         display: none;
     }
 
