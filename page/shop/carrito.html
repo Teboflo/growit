@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowiT | Carrito</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../css/shop.css" />
+    <link rel="icon" href="../../image/ico.ico" type="image/x-ico">
+    <link href="https://fonts.googleapis.com/css?family=Arial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <a class="logo" href="../../index.html">
+                    <div class="img-logo">
+                    </div>
+                    <h3>Shop</h3>
+                </a>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li><a class="boton-volver" href="servicios.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                                <path d="M9 13h7v-2H9V7l-6 5 6 5z"></path>
+                                <path d="M19 3h-7v2h7v14h-7v2h7c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"></path>
+                            </svg> Continuar Comprando</a></li>
+                    <li><a class="boton-carrito" href="carrito.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                                <path
+                                    d="M21 4H6.17l-.18-1.15A1 1 0 0 0 5 2H2v2h2.14l1.87 12.15A1 1 0 0 0 7 17h12v-2H7.86l-.31-2H19c.45 0 .84-.3.96-.73l2-7A1 1 0 0 0 21 3.99Zm-2.75 7H7.24l-.77-5h13.2l-1.43 5ZM8 18a2 2 0 1 0 0 4 2 2 0 1 0 0-4m9 0a2 2 0 1 0 0 4 2 2 0 1 0 0-4">
+                                </path>
+                            </svg> Carrito <span class="numerito">0</span></a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="text-footer">&copy;2026 GrowiT | Digital Performance</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="principal-title">Carrito de <u>Compras</u></h2>
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio" id="vacio">Tu carrito está vacío <svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                        <path
+                            d="m11.73 5.32-1.41 1.41 1.77 1.77-1.77 1.77 1.41 1.41 1.77-1.77 1.77 1.77 1.41-1.41-1.77-1.77 1.77-1.77-1.41-1.41-1.77 1.77z">
+                        </path>
+                        <path
+                            d="M17.31 14H9.72L5.95 2.68A1 1 0 0 0 5 2H2v2h2.28l3.54 10.63A2 2 0 0 0 9.72 16h7.59a2 2 0 0 0 1.87-1.3l2.76-7.35-1.87-.7zM10 18a2 2 0 1 0 0 4 2 2 0 1 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 1 0 0-4">
+                        </path>
+                    </svg></p>
+                <div class="carrito-productos disabled" id="productos-en-carrito">
+
+                </div>
+                <div class="carrito-acciones disabled" id="ctas">
+                    <div class="acciones-left">
+                        <button class="boton-vaciar" id="boton-vaciar"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                                <path
+                                    d="M17 6V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8h2V6zM9 4h6v2H9zM6 20V8h12v12z">
+                                </path>
+                                <path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+                            </svg>Vaciar Carrito</button>
+                    </div>
+                    <div class="acciones-right">
+                        <div class="carrito-total">
+                            <p>Total:</p>
+                            <p id="total">$149,98</p>
+                        </div>
+                        <button class="buy-now" id="buy">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    </div>
+    <script src="../../script/carrito.js"></script>
+</body>
+
+</html>
