@@ -50,37 +50,38 @@ const indice = document.querySelectorAll('.indice');
 function cargarTrabajos(proyectosElegidos) {
     proyectosContent.innerHTML = '';
 
-    proyectosElegidos.forEach(trabajos => {
+    proyectosElegidos.forEach(proyecto => {
         const div = document.createElement('div');
         div.classList.add('proyecto');
-        div.innerHTML = `<div class="proyect-left">
-                        <img src="${trabajos.imagen}" alt="${trabajos.titulo}" class="proyect-img">
-                    </div>
-                    <div class="proyect-right">
-                        <h3 class="title">
-                            <u>${trabajos.titulo}</u> ${trabajos.subtitle}
-                        </h3>
-                        <p class="proyect-text">
-                            ${trabajos.texto}
-                        </p>
-                        <a href="${trabajos.link}" class="proyect-cta" target="_blank">${trabajos.cta}</a>
-                    </div>`;
-
-
+        div.innerHTML = `
+            <div class="proyect-left">
+                <img src="${proyecto.imagen}" alt="${proyecto.titulo}" class="proyect-img">
+            </div>
+            <div class="proyect-right">
+                <h3 class="title">
+                    <u>${proyecto.titulo}</u> ${proyecto.subtitle}
+                </h3>
+                <p class="proyect-text">
+                    ${proyecto.texto}
+                </p>
+                <a href="${proyecto.link}" class="proyect-cta" target="_blank">${proyecto.cta}</a>
+            </div>`;
         proyectosContent.append(div);
     });
 }
 
-cargarTrabajos(trabajos);
 
 indice.forEach(boton => {
     boton.addEventListener('click', (e) => {
-        if (e.currentTarget.id != 'todos') {
-            const botonElegido = trabajos.filter(proyecto => proyecto.categoria.id === e.currentTarget.id);
-            cargarTrabajos(botonElegido);
+
+        indice.forEach(b => b.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+
+        if (e.currentTarget.id !== 'todos') {
+            const proyectosFiltrados = trabajos.filter(proyecto => proyecto.categoria.id === e.currentTarget.id);
+            cargarTrabajos(proyectosFiltrados);
         } else {
-            cargarTrabajos(botonElegido);
+            cargarTrabajos(trabajos);
         }
     });
 });
-

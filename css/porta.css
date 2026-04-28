@@ -271,6 +271,11 @@
     cursor: pointer;
 }
 
+.tabla-section .tabla-content .indices .indice.active {
+    color: #fff;
+    background: #000;
+}
+
 
 .tabla-section .tabla-content .indices .indice svg {
     width: 30px;
