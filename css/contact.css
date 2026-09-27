@@ -1,0 +1,214 @@
+.brief-section {
+    width: 100%;
+    height: 550px;
+    border-radius: 6px;
+}
+
+.brief-section .brief-content {
+    width: 100%;
+    height: 100%;
+    background: #0B0C10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.brief-section .brief-content .contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.brief-section .brief-content .contact-left .title {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #66FCF1;
+}
+
+.brief-section .brief-content .contact-left hr {
+    border: none;
+    width: 100px;
+    height: 5px;
+    background: #66FCF1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.brief-section .brief-content .contact-left .contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 0 0 25px;
+    font-weight: 600;
+    color: #1F2833;
+    border-radius: 35px;
+}
+
+.brief-section .brief-content .contact-left .men-input {
+    width: 400px;
+    height: 140px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: #1F2833;
+    font-weight: 600;
+    padding: 15px 0 0 25px;
+    border-radius: 20px;
+}
+
+.brief-section .brief-content .contact-left .contact-inputs:focus {
+    border: 2px solid #66FCF1;
+    background: #1F2833;
+    color: #fff;
+}
+
+.brief-section .brief-content .contact-left .contact-inputs::placeholder {
+    color: #45A29E;
+}
+
+.brief-section .brief-content .contact-left .men-input:focus {
+    border: 2px solid #66FCF1;
+    background: #1F2833;
+    color: #fff;
+}
+
+.brief-section .brief-content .contact-left .men-input::placeholder {
+    color: #45A29E;
+}
+
+.brief-section .brief-content .contact-left button {
+    position: relative;
+    margin-top: 5px;
+    padding: 10px 80px;
+    background: #66FCF1;
+    color: #0B0C10;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 0 12px 12px 12px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.brief-section .brief-content .contact-left button::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    top: -10px;
+    left: 0px;
+    background: #66FCF1;
+    border-radius: 10px 10px 0 0;
+}
+
+.brief-section .brief-content .contact-left button:hover {
+    color: #66FCF1;
+    background: #0B0C10;
+    border: 1px solid #66FCF1;
+}
+
+.brief-section .brief-content .contact-left button:hover::before {
+    background: #0B0C10;
+    border: 1px solid #66FCF1;
+    border-bottom: none;
+}
+
+.brief-section .brief-content .contact-left button:active {
+    background: #fff;
+    color: #0B0C10;
+    border: none;
+}
+
+.brief-section .brief-content .contact-left button:active::before {
+    background: #fff;
+    border: none;
+}
+
+.brief-section .brief-content .contact-right {
+    width: 50%;
+    height: 95%;
+    background: url(../image/graphic/contac.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
+/*======= Responsive Design Tables ======*/
+
+
+
+@media (max-width:1024px) {
+
+    .brief-section {
+        height: 450px;
+    }
+
+    .brief-section .brief-content .contact-left .title {
+        font-size: 30px;
+        margin-bottom: 0px;
+        color: #66FCF1;
+    }
+
+    .brief-section .brief-content .contact-left hr {
+        width: 100px;
+        height: 5px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+
+    .brief-section .brief-content .contact-left .contact-inputs {
+        width: 300px;
+        height: 40px;
+    }
+
+    .brief-section .brief-content .contact-left .men-input {
+        width: 300px;
+        height: 120px;
+    }
+
+    .brief-section .brief-content .contact-left button {
+        padding: 10px 60px;
+    }
+
+    .brief-section .brief-content .contact-left button::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 10px;
+        top: -8px;
+        left: 0px;
+        background: #66FCF1;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .brief-section .brief-content .contact-right {
+        width: 40%;
+        height: 90%;
+    }
+
+}
+
+
+
+/*===== Responsive Design Phone =====*/
+
+
+
+
+@media (max-width:768px) {
+
+    .brief-section .brief-content .contact-left .title {
+        font-size: 25px;
+    }
+
+    .brief-section .brief-content .contact-right {
+        display: none;
+    }
+
+}

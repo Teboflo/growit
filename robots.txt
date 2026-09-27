@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://growit-digital.netlify.app/sitemap.xml
