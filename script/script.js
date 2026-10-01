@@ -1,29 +1,37 @@
 function showSidebar() {
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = "flex"
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = "flex";
 }
 
 function hideSidebar() {
-    const close = document.querySelector('.sidebar')
-    close.style.display = "none"
+    const close = document.querySelector('.sidebar');
+    close.style.display = "none";
 }
 
-const user = document.querySelector('.hero-section .hero-content .titles .title u');
-const newWords = ['Marketing', 'Design', 'Strategy', 'Digital', 'Influence', 'Top Mind', 'Analytic'];
-let i = 0;
+document.addEventListener('DOMContentLoaded', () => {
+    const user = document.querySelector('.hero-section .hero-content .titles .title u');
+    if (!user) return;
 
-user.addEventListener('mouseenter', () => {
-    clearInterval(buclePalabras);
-    buclePalabras = setInterval(() => {
-        user.textContent = newWords[i];
-        i = (i + 1) % newWords.length;
-    }, 250);
-});
+    const newWords = ['GrowiT', 'Marketing', 'Design', 'Strategy', 'Digital', 'Influence', 'Top Mind', 'Analytic'];
+    let i = 0;
+    let buclePalabras;
 
-let buclePalabras;
-const original = user.textContent;
+    // Función para iniciar la rotación de palabras
+    function iniciarRecorrido() {
+        clearInterval(buclePalabras);
+        buclePalabras = setInterval(() => {
+            user.textContent = newWords[i];
+            i = (i + 1) % newWords.length;
+        }, 700);
+    }
 
-user.addEventListener('mouseleave', () => {
-    clearInterval(buclePalabras);
-    user.textContent = original;
+    iniciarRecorrido();
+
+    user.addEventListener('mouseenter', () => {
+        clearInterval(buclePalabras);
+    });
+
+    user.addEventListener('mouseleave', () => {
+        iniciarRecorrido();
+    });
 });

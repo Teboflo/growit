@@ -3,38 +3,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!user) return;
 
-    const words = ['Tu Marca', 'Tu Estilo', 'Tu Presencia', 'Tu Imagen', 'Branding'];
+    const words = ['Brand Identity', 'Tu Marca', 'Tu Estilo', 'Tu Presencia', 'Tu Imagen', 'Branding'];
     let i = 0;
     let buclePalabras = null;
-    const palabraOriginal = user.textContent.trim();
 
-    user.addEventListener('mouseenter', () => {
+    function cambiarPalabra() {
+        user.textContent = words[i];
+        i = (i + 1) % words.length;
+
+        user.style.display = 'inline-block';
+        user.offsetHeight;
+        user.style.display = 'block';
+    }
+
+    function iniciarRecorrido() {
         if (buclePalabras) return;
+        buclePalabras = setInterval(cambiarPalabra, 700);
+    }
 
-        buclePalabras = setInterval(() => {
-            // Cambiamos el texto
-            user.textContent = words[i];
-            i = (i + 1) % words.length;
-
-            // TRUCO PRO: Refrescamos el elemento para que el gradiente CSS se reaplique
-            user.style.display = 'inline-block';
-            user.offsetHeight; // Esto fuerza al navegador a redibujar
-            user.style.display = 'block';
-        }, 350); // Un poco más lento para que se aprecie el efecto
-    });
-
-    user.addEventListener('mouseleave', () => {
+    function detenerRecorrido() {
         clearInterval(buclePalabras);
         buclePalabras = null;
-        user.textContent = palabraOriginal;
-    });
+    }
+
+    iniciarRecorrido();
+
+    user.addEventListener('mouseenter', detenerRecorrido);
+
+    user.addEventListener('mouseleave', iniciarRecorrido);
 });
 
+
 const title = document.querySelector('.servicio');
-const logan = document.querySelector('.logan')
+const logan = document.querySelector('.logan');
 
 window.addEventListener('scroll', () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 768 && title && logan) {
         let scroll = window.scrollY;
         let move = scroll * -0.3;
         title.style.transform = `translateY(${move}px)`;
@@ -47,7 +51,7 @@ const strategy = document.querySelector('.estrategia');
 const objetivo = document.querySelector('.objetivo');
 
 window.addEventListener('scroll', () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 768 && aimsec && strategy && objetivo) {
         let topaim = aimsec.offsetTop;
         let topmind = topaim - 200;
         let scrollActual = window.scrollY;
@@ -64,7 +68,7 @@ const pricesection = document.querySelector('.pricing-section');
 const precio = document.querySelector('.price');
 
 window.addEventListener('scroll', () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 768 && pricesection && precio) {
         let topprice = pricesection.offsetTop;
         let topreal = topprice - 150;
         let scrollActual = window.scrollY;
