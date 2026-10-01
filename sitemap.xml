@@ -6,4 +6,26 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://growit-digital.netlify.app/page/portafolio.html</loc>
+  </url>
+  <url>
+    <loc>https://growit-digital.netlify.app/page/brand.html</loc>
+  </url>
+  <url>
+    <loc>https://growit-digital.netlify.app/page/community.html</loc>
+  </url>
+  <url>
+    <loc>https://growit-digital.netlify.app/page/contanct.html</loc>
+  </url>
+  <url>
+    <loc>https://growit-digital.netlify.app/page/data-hub.html</loc>
+  </url>
+  <url>
+    <loc>https://growit-digital.netlify.app/page/sale-flow.html</loc>
+  </url>
+  <url>
+    <loc>https://growit-digital.netlify.app/page/web-impact.html</loc>
+  </url>
+
 </urlset>
