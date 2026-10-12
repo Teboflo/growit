@@ -519,6 +519,36 @@
     color: var(--color);
 }
 
+.let_what {
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 17px;
+    background: #66FCF1;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    color: #0B0C10;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.let_what svg {
+    width: 20px;
+    height: 20px;
+}
+
+.let_what:hover {
+    background: #0B0C10;
+    color: #66FCF1;
+    border: 2px solid #66FCF1;
+}
+
 
 
 .cta:before {
@@ -646,6 +676,11 @@
     .tabla-section .tabla-content .indices {
         margin-top: 40px;
         gap: 30px;
+    }
+
+    .let_what {
+        width: 170px;
+        margin-top: 8px;
     }
 
 }
@@ -880,5 +915,7 @@
     .megacta-section .cta-content .action {
         font-size: 45px;
     }
+
+
 
 }

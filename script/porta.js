@@ -89,3 +89,13 @@ indice.forEach(boton => {
         }
     });
 });
+
+
+
+indice.forEach(boton => {
+    boton.classList.toggle('active', boton.id === 'web');
+});
+
+cargarTrabajos(
+    trabajos.filter(proyecto => proyecto.categoria.id === 'web')
+);
